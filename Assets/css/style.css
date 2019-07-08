@@ -1,0 +1,83 @@
+.Menu {
+
+	vertical-align: baseline;
+
+	width: 1250px;
+
+	height: 46px;
+
+}
+
+.Menu_2 {
+
+	width: 1250px;
+
+	height: 46px;
+}
+
+.Menu ul {
+	
+	list-style: none;
+
+	overflow: hidden;
+
+  	padding: 0;
+
+}
+
+.Menu_2 ul {
+	
+	list-style: none;
+
+	overflow: hidden;
+
+  	padding: 0;
+
+  	margin-left: 120px;
+
+}
+
+.Menu li {
+
+	float: left;
+
+
+}
+
+.Menu_2 li {
+
+	float: left;
+	margin-left: 20px;
+}
+
+.Menu a {
+
+	text-decoration: none;
+
+	display: block;
+
+ 	padding: 1em;
+
+ 	border-right: 0px solid #ADC0CE;
+
+ 	background: #212121;
+
+ 	color: #FFFFFF;
+}
+
+.Menu_2 a{
+
+	text-decoration: none;
+
+	padding: 0em;
+
+	border-right: 0px;
+
+	color: #212121;
+}
+
+ul.MenuBar {
+	
+	color: #212121;
+	background-color: #212121;
+}
