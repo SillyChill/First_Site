@@ -1,3 +1,11 @@
+HEADER {
+	margin-left: 0px;
+	margin-right: 0px;
+	color: #212121;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 .Menu {
 
 	vertical-align: baseline;
@@ -5,6 +13,10 @@
 	width: 1250px;
 
 	height: 46px;
+
+	margin-right: auto;
+
+	margin-left: auto;
 
 }
 
