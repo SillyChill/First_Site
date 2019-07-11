@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
 	<meta charset = "UTF-8">
-
+	<script src="https://kit.fontawesome.com/c96c974afa.js"></script>
 	<title></title>
 
 	<link rel = "stylesheet" type = "text/css" href = "./Assets/css/style.css">
@@ -10,55 +10,184 @@
 </head>
 
 <body>
+	
+	<div class = "Header">
 
-	<HEADER>
-		
-		<div class = "Menu"> 
-			<ul class = "MenuBar">
+		<div class = "Logo"> 
+			<img src="./Assets/img/mel_im.jpg" alt="Мел">
+		</div>
 
-				<li> <a href = "#"> Мел </a> </li>
-
-				<li> <a href = "#"> Тексты </a> </li>
-
+		<div class = "Menu">
+			<ul class = "menu">
+				<li class="select"> <a href = "#"> Тексты </a> </li>
 				<li> <a href = "#"> Афиша </a> </li>
-
 				<li> <a href = "#"> Книги </a> </li>
+				<li> <a href = "#"> Школы </a> </li>
+			</ul>
+		</div>
 
-				<li> <a href = "#"> Школы </a> </li> 
-			
-				<li> <a href = "#"> значок лупы поместить сюда </a> </li>
-
-				<li> <a href = "#"> Написать влог </a> </li>
-
-				<li> <a href = "#"> вход </a> </li> </ul>
+		<div class="Auth">
+			<ul class="auth">
+				<li> 
+					<button class="search_button">
+						<i class="fas fa-search"></i>
+					</button>
+				</li>
+				<li> 
+					<button class="vlog_button"> 
+						<ul class="vlog_vlog">
+							<li> <i class="far fa-edit"> <span class="blog">НАПИСАТЬ В БЛОГ</span></i> </li>	
+				 		</ul>
+				 	</button>
+				</li>
+				<li> 
+					<button class="vhod_button">
+						<a href = "#"> вход </a> 
+					</button>		
+				</li>
+			</ul>
 
 		</div>
 		
-	</HEADER>
-	<div class = "Menu_2">
+	</div>
+	<div class="Front_Page">
+		<div class="Front_Page_Column">
+			<div class = "Menu_2">
+					<ul class = "MenuBar_2">
+						<li> <a href = "#"> <h4>ДО ШКОЛЫ</h4></a> </li>
+						<li> <a href = "#"> <h4>ШКОЛА</h4> </a> </li>
+						<li> <a href = "#"> <h4>ВУЗ</h4> </a> </li>
+						<li> <a href = "#"> <h4>ПЕРЕМЕНА</h4> </a> </li>
+						<li> <a href = "#"> <h4>СЕМЬЯ</h4> </a> </li>
+						<li> <a href = "#"> <h4>ПОДРОСТКИ</h4> </a> </li>
+						<li> <a href = "#"> <h4>ЕГЭ</h4> </a> </li>
+						<li> <a href = "#"> <h4>КАНИКУЛЫ</h4> </a> </li>
+						<li class="blogi"> <a href = "#"> <h4>БЛОГИ</h4> </a> </li> 
+					</ul>
+			</div>
 
-			<ul class = "MenuBar_2">
+			<div class="Front_Page_Grid">
+				<div class="Front_Card">
+					<div class="article_card">
+						<a class="article_card_link">
+							<div class="image_wrap">
+								<picture>
+									<img class="article_card_image" src="./Assets/img/image.jpg">
+								</picture>
+							</div>
+							<div class="article_card_content">
+								<div class="main_tag">Блоги</div>
+								<div class="card_title">Танец для детей: почему не только балет</div>
+								<div class="article_card_stats">
+									<div class="read_time">
+									</div>
+								</div>
+							</div>
+							<div class="image_card"></div>
+						</a>
+					</div>
+				</div>
+				<div class="Front_Card">
+					<div class="article_card">
+						<a class="article_card_link"></a>
+							<div class="image_card"></div>
+					</div>
+				</div>
+				<div class="Front_Card">
+					<div class="article_card">
+						<a class="article_card_link"></a>
+							<div class="image_card"></div>
+					</div>
+				</div>
+				<div class="Front_Card">
+					<div class="article_card">
+						<a class="article_card_link"></a>
+							<div class="image_card"></div>
+					</div>
+				</div>
+				<div class="Front_Card">
+					<div class="article_card">
+						<a class="article_card_link"></a>
+							<div class="image_card"></div>
+					</div>
+				</div>
+				<div class="Front_Card">
+					<div class="article_card">
+						<a class="article_card_link"></a>
+							<div class="image_card"></div>
+					</div>
+				</div>
+				<div class="More_publications">
+					<div class="control_button">
+						<button class="c_button_label"> Больше статей </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sub_bottom_menu">
+		<div class="newsletter_sign_up"> Рассылка «Мела» </div>
+		<div class="newsletter_mail">
+			<div class="email_input">
+				<input class="input" type="email" placeholder="Введите свой e-mail" value autocomplete="on" spellcheck="false">
+				<div class="icon_input">
+					<button class="icon_button"> 
+						<img src="./Assets/img/airplan_icon.jpg">
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="newsletter_description">
+			"Мы отправляем нашу интересную и очень полезную рассылку два раза в неделю: во вторник и пятницу"
+		</div>
+	</div>
 
-				<li> <a href = "#"> <h4>ДО ШКОЛЫ</h4></a> </li>
+	
+		<div class="control_label_footer">
+			<div class="rubrics">
+				<ul class="rubrics_menu">
+					<li> <a href = "#"> <h4>ДО ШКОЛЫ</h4></a> </li>
+					<li> <a href = "#"> <h4>ШКОЛА</h4> </a> </li>
+					<li> <a href = "#"> <h4>ВУЗ</h4> </a> </li>
+					<li> <a href = "#"> <h4>ПЕРЕМЕНА</h4> </a> </li>
+					<li> <a href = "#"> <h4>СЕМЬЯ</h4> </a> </li>
+					<li> <a href = "#"> <h4>ПОДРОСТКИ</h4> </a> </li>
+					<li> <a href = "#"> <h4>ЕГЭ</h4> </a> </li>
+					<li> <a href = "#"> <h4>КАНИКУЛЫ</h4> </a> </li>
+					<li class="blogi"> <a href = "#"> <h4>БЛОГИ</h4> </a> </li> 
+				</ul>
+			</div>
+			<div class="rubrics_links">
+				<a href="#">Контакты</a>
+				<a href="#">Реклама</a>
+				<a href="#">Мероприятия</a>
+				<a href="#">Корпоративные блоги</a>
+				<a href="#">Пользовательское соглашение</a>
+				<a href="#">Политика конфидециальности</a>
+				<a href="#">Политика в отношении обработки персональных данных</a>
+				<a href="#">Архив материалов</a>
+				<a href="#">Все авторы</a>
+				<a href="#">Все блоги</a>
+				<a href="#">Популярные темы</a>
+			</div>
+			<div class="rubrics_socials">
+				<ul class="social_links">
+					<li><div class="facebook_link"> <a href="#"> <i class="fab fa-facebook-f"> </i> </a> </div></li>
+					<li><div class="VK_link"> <a href="#"> <i class="fab fa-vk"></i> </a> </div></li>
+					<li><div class="Twitter_link"> <a href="#"> <i class="fab fa-twitter"></i> </a> </div></li>
+					<li><div class="OK_link"> <a href="#"> <i class="fab fa-odnoklassniki"></i> </a> </div></li>
+					<li><div class="Teleg_link"> <a href="#"> <i class="fab fa-telegram-plane"> </i> </a> </div></li>
+					<li><div class="Insta_link"> <a href="#"> <i class="fab fa-instagram"></i> </a> </div></li>
+					<li><div class="Flipboard_link"> <a href="#"> <i class="fab fa-flipboard"></i> </a> </div></li>
+				</ul>
+			</div>
+			<span class="copyr">© Мел, 2019</span>
+		</div>
+	  
 
-				<li> <a href = "#"> <h4>ШКОЛА</h4> </a> </li>
-
-				<li> <a href = "#"> <h4>ВУЗ</h3> </a> </li>
-
-				<li> <a href = "#"> <h4>ПЕРЕМЕНА</h4> </a> </li>
-
-				<li> <a href = "#"> <h4>СЕМЬЯ</h4> </a> </li>
-
-				<li> <a href = "#"> <h4>ПОДРОСТКИ</h4> </a> </li>
-
-				<li> <a href = "#"> <h4>ЕГЭ</h4> </a> </li>
-
-				<li> <a href = "#"> <h4>КАНИКУЛЫ</h4> </a> </li>
-
-				<li> <a href = "#"> <h4>БЛОГИ</h4> </a> </li> </ul>
 
 			
-		</div>
+	</div>
 
 
 </body>
