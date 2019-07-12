@@ -6,6 +6,8 @@ body {
 .Header {
 	height: 70px;
 	background-color: #212121;
+	padding-left: 203px;
+	padding-right: 203px;
 
 }
 .Menu {
@@ -15,17 +17,18 @@ body {
 }
 
 .Logo {
-	padding-left: 190px;
 	height: 100%;
 	float: left;
-	margin-left: 15px;
+}
+
+.Logo img :focus {
+	outline: 0;
+	box-shadow: none;
 }
 
 .Auth {
-
 	float: right;
 	height: 100%;
-	margin-right: 205px;
 }
 
 .Front_Page {
@@ -132,6 +135,10 @@ ul.menu a:hover {
     transition-duration: 0.2s;
 	color:#47b3ac;
 }
+
+ul.menu a:focus {
+	outline: 0;
+}
 	
 }
 .Auth ul {
@@ -205,6 +212,10 @@ ul.MenuBar_2 h4:hover{
 	color:#47b3ac;
 }
 
+ul.MenuBar_2 h4:focus {
+	outline: 0;
+}
+
 ul.auth  {
 	padding-top: 5px;
 
@@ -221,11 +232,51 @@ button.search_button {
 	padding-right: 20px;
 }
 
+.search_button_mobile {
+	width: 20px;
+    height: 20px;
+}
+
+.search_button_mobile:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.mobile_menu_bar {
+	display: block;
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding-top: 28px;
+    box-sizing: border-box;
+}
+
+.mobile_button_menu {
+	display: block;
+    color: #FFF;
+    background-color: #212121;
+    border: 0;
+    padding: 0;
+	width: 20px;
+    height: 20px;
+}
+
+.mobile_button_menu:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+
 button.search_button i:hover {
 	transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
 	color:#47b3ac;
 }
+
+button.search_button:focus {
+	outline: 0;
+}
+
 button.search_button i {
 	font-size: 130%;	
 }
@@ -245,6 +296,9 @@ button.vlog_button {
 	background-color: #212121;
 	border:none;
 	padding: 0;
+}
+button.vlog_button:focus {
+	outline: 0;
 }
 
 ul.vlog_vlog i:hover {
@@ -380,7 +434,6 @@ button.c_button_label  {
 }
 .icon_button:focus {
 	outline: 0;
-	
 	box-shadow: none;
 }
 
