@@ -279,6 +279,11 @@ li.blogi h4 {
 
 }
 
+.c_button_label a {
+	color: #FFF;
+	text-decoration: none;
+}
+
 .control_button {
 	padding-top: 20px;
 	box-sizing: border-box;
@@ -291,6 +296,10 @@ button.c_button_label  {
 	height: 100%;
 	padding-left: 45px;
     padding-right: 45px;
+}
+
+.c_button_label:hover {
+	background-color: #4bc0b8;
 }
 
 .newsletter_sign_up {
@@ -344,6 +353,7 @@ button.c_button_label  {
 
 }
 .input:focus{
+	outline: 0;
 	box-sizing: border-box;
     color: #000;
     border: 2px solid #47B3AC;
@@ -354,6 +364,7 @@ button.c_button_label  {
     font-style: normal;
 }
 .icon_button:focus {
+	outline: 0;
 	
 	box-shadow: none;
 }
