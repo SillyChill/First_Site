@@ -262,6 +262,10 @@ button.vhod_button a {
 	padding-bottom: 6px;
 }
 
+.vhod_button:hover {
+	background-color: #4bc0b8;
+}
+
 li.blogi h4 {
 	color: #47b3ac;
 }
