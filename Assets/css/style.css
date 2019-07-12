@@ -18,13 +18,14 @@ body {
 	padding-left: 190px;
 	height: 100%;
 	float: left;
+	margin-left: 15px;
 }
 
 .Auth {
 
 	float: right;
 	height: 100%;
-	margin-right: 220px;
+	margin-right: 205px;
 }
 
 .Front_Page {
@@ -46,7 +47,7 @@ body {
 	width: 100%;
 	box-sizing: border-box;
     height: 100%;
-    margin: -15px;
+    
 }
 
 .Front_Card {
@@ -170,6 +171,7 @@ ul.menu a:hover {
 	overflow: hidden;
   	padding: 0;
   	margin: 0;
+  	margin-left: 15px;
 }
 
 .Menu_2 li {
