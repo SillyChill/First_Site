@@ -1,4 +1,5 @@
 body {
+	background-color: #F2F2F2;
 	padding: 0;
 	margin:0;
 }
@@ -23,27 +24,39 @@ body {
 
 	float: right;
 	height: 100%;
-	margin-right: 200px;
+	margin-right: 220px;
 }
 
 .Front_Page {
-	background-color: #F2F2F2;
+	
+    display: table;
+    height: 100%;
+    width: -webkit-fill-available;
 }
+
 .Front_Page_Column {
 	width: 1210px;
     margin: 0 auto;
+    box-sizing: border-box;
+    height: 100%;
     
 }
 
 .Front_Page_Grid {
-	margin: 0 auto;
 	width: 100%;
+	box-sizing: border-box;
+    height: 100%;
+    margin: -15px;
 }
 
 .Front_Card {
-	display: inline-block;
-    margin: 15px;
+	display: block;
+    padding: 15px;
     vertical-align: top;
+    margin: 0;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
 }
 
 .article_card {
@@ -59,7 +72,7 @@ body {
 
 
 .More_publications {
-	
+	display: block;
 	padding-bottom: 55px;
 	text-align: center;
 	width: 100%;
@@ -538,12 +551,6 @@ ul.rubrics_menu a:hover {
 	background-color: #1C1C1C;
 }
 
-.Front_Card {
-	display: inline-block;
-    margin: 9px;
-    vertical-align: top;
-}
-
 .article_card_content {
 	padding: 20px 25px 25px;
 }
@@ -562,7 +569,7 @@ ul.rubrics_menu a:hover {
 
 .article_card {
 	display: inline-block;
-    width: 280px;
+    width: 100%;
     height: 440px;
     position: relative;
     font-family: PTSerif,serif;
