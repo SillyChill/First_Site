@@ -4,6 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta charset = "UTF-8">
+		
+	<script type="text/javascript" src="./Assets/Scripts/Script.js"></script>
 	<script src="https://kit.fontawesome.com/c96c974afa.js"></script>
 	<title></title>
 
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-	
+	<div class="background_header">
 	<div class = "Header">
 		<div class="mobile_search">
 				<button class="search_button_mobile">
@@ -63,6 +65,7 @@
 		</div>
 		
 	</div>
+	</div>
 	<div class="Front_Page">
 		<div class="Front_Page_Column">
 			<div class = "Menu_2">
@@ -79,7 +82,7 @@
 					</ul>
 			</div>
 
-			<div class="Front_Page_Grid">
+			<div id ="Front_Page_Grid">
 				<div class="Front_Card">
 					<div class="article_card">
 						<a class="article_card_link">
@@ -183,65 +186,13 @@
 							<div class="image_card"></div>
 						</a>
 					</div>
-				</div>
-				<div class="Front_Card">
-					<div class="article_card">
-						<a class="article_card_link">
-							<div class="image_wrap">
-								<picture>
-									<img class="article_card_image" src="./Assets/img/image.jpg">
-								</picture>
-							</div>
-							<div class="article_card_content">
-								<div class="main_tag">Блоги</div>
-								<div class="card_title">Танец для детей: почему не только балет</div>
-								<div class="article_card_stats">
-									<div class="read_time">
-										<div class="read_time_icon">
-											<div class="svg_icon">
-												<i class="far fa-clock"></i>
-											</div>
-										</div>
-										<span class="article_card_counter">Читать: 2 мин</span>
-									</div>
-								</div>
-							</div>
-							<div class="image_card"></div>
-						</a>
-					</div>
-				</div>
-				<div class="Front_Card">
-					<div class="article_card">
-						<a class="article_card_link">
-							<div class="image_wrap">
-								<picture>
-									<img class="article_card_image" src="./Assets/img/image.jpg">
-								</picture>
-							</div>
-							<div class="article_card_content">
-								<div class="main_tag">Блоги</div>
-								<div class="card_title">Танец для детей: почему не только балет</div>
-								<div class="article_card_stats">
-									<div class="read_time">
-										<div class="read_time_icon">
-											<div class="svg_icon">
-												<i class="far fa-clock"></i>
-											</div>
-										</div>
-										<span class="article_card_counter">Читать: 2 мин</span>
-									</div>
-								</div>
-							</div>
-							<div class="image_card"></div>
-						</a>
-					</div>
-				</div>
+				</div>			
 			</div>
 		</div>
 	</div>
 	<div class="More_publications">
 		<div class="control_button">
-			<button class="c_button_label"> <a href="#">Больше статей</a> </button>
+			<button class="c_button_label" onclick = "add_card()" > Больше статей </button>
 		</div>
 	</div>
 	<div class="sub_bottom_menu">
@@ -310,5 +261,6 @@
 
 
 </body>
+
 
 </html>

@@ -1,4 +1,4 @@
-@media screen  and (min-width: 1026px){
+
 	.mobile_search {
 		display: none;
 	}
@@ -13,21 +13,13 @@
 	.mobile_button_menu{
 		display: none;
 	}
-}
-@media screen  and (max-width: 1025px){
+@media screen  and (max-width: 1100px){
 	.Header {
     height: 70px;
     background-color: #212121;
-    padding-left: 70px;
-    padding-right: 77px;
+    
 	}
 
-	.mobile_search {
-		display: none;
-	}
-	.search_button_mobile {
-		display: none;
-	}
 
 	.blog {
     font-size: 60%;
@@ -37,7 +29,7 @@
 	}
 
 	.Front_Page_Column {
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     height: 100%;
@@ -83,50 +75,9 @@
 
 }
 
-@media screen  and (max-width: 768px){
 
-	.Header {
-    height: 70px;
-    background-color: #212121;
-    padding-left: 30px;
-    padding-right: 35px;
-	}
 
-	.mobile_search {
-		display: none;
-	}
-	.search_button_mobile {
-		display: none;
-	}
-
-	.Menu_2 ul {
-    list-style: none;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    margin-left: 6px;
-    height: 100%;
-	}
-
-	.Front_Page {
-    display: table;
-    height: 100%;
-    width: 100%;
-	}
-
-	.Front_Page_Column {
-    width: 730px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    height: 100%;
-	}
-
-	.mobile_menu_bar {
-		display: none;
-	}
-}
-
-@media screen  and (max-width: 426px){
+@media screen  and (max-width: 760px){
 	.Header {
     height: 70px;
     background-color: #212121;
@@ -157,11 +108,16 @@
 	.Logo {
     height: 100%;
     float: left;
-    padding-left: 130px;
+    position: absolute;
+    left: 40%;
 
 	}
 
 	.Menu {
+		display: none;
+	}
+
+	.Menu_2 {
 		display: none;
 	}
 
@@ -176,7 +132,7 @@
 	}	
 
 	.Front_Page_Column {
-    width: 400px;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     height: 100%;
@@ -205,6 +161,10 @@
 	}
 	
 	.mobile_menu_bar {
+		display: block;
+	}
+
+	.mobile_button_menu {
 		display: block;
 	}
 
