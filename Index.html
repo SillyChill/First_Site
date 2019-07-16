@@ -4,8 +4,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta charset = "UTF-8">
-		
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>	
 	<script type="text/javascript" src="./Assets/Scripts/Script.js"></script>
+	<script type="text/javascript" src="./Assets/Scripts/swap_script.js"></script>
 	<script src="https://kit.fontawesome.com/c96c974afa.js"></script>
 	<title></title>
 
@@ -14,7 +18,7 @@
 
 </head>
 
-<body>
+<body id='show_menu_body' class="">
 	<div class="background_header">
 	<div class = "Header">
 		<div class="mobile_search">
@@ -59,137 +63,149 @@
 		</div>
 
 		<div class="mobile_menu_bar">
-			<button class="mobile_button_menu">
-				<i class="fas fa-bars"></i>
+			<button id="click_button" class="mobile_button_menu" onclick="swap_icon()">
+				<i id="menu_icon" class="fas fa-bars"></i>
 			</button>
+			<ul id="mobile_menu_id" class="mobile_menu_visibility display_none">
+				<li><a href="#">Тексты</a></li>
+				<li><a href="#">Афиша</a></li>
+				<li><a href="#">Книги</a></li>
+				<li><a href="#">Книги</a></li>
+				<li><a href="#">Школы</a></li>
+				<li><a href="#">Поиск</a></li>
+				<li><a href="#">Написать в блог</a></li>
+				<li class="green_button"><a href="#">Вход</a></li>
+			</ul> 
 		</div>
 		
 	</div>
 	</div>
-	<div class="Front_Page">
-		<div class="Front_Page_Column">
-			<div class = "Menu_2">
-					<ul class = "MenuBar_2">
-						<li> <a href = "#"> <h4>ДО ШКОЛЫ</h4></a> </li>
-						<li> <a href = "#"> <h4>ШКОЛА</h4> </a> </li>
-						<li> <a href = "#"> <h4>ВУЗ</h4> </a> </li>
-						<li> <a href = "#"> <h4>ПЕРЕМЕНА</h4> </a> </li>
-						<li> <a href = "#"> <h4>СЕМЬЯ</h4> </a> </li>
-						<li> <a href = "#"> <h4>ПОДРОСТКИ</h4> </a> </li>
-						<li> <a href = "#"> <h4>ЕГЭ</h4> </a> </li>
-						<li> <a href = "#"> <h4>КАНИКУЛЫ</h4> </a> </li>
-						<li class="blogi"> <a href = "#"> <h4>БЛОГИ</h4> </a> </li> 
-					</ul>
-			</div>
+	<div id="mask_show" class="mask display_none"></div>
+		<div class="Front_Page">
+			<div class="Front_Page_Column">
+				<div class = "Menu_2">
+						<ul class = "MenuBar_2">
+							<li> <a href = "#"> <h4>ДО ШКОЛЫ</h4></a> </li>
+							<li> <a href = "#"> <h4>ШКОЛА</h4> </a> </li>
+							<li> <a href = "#"> <h4>ВУЗ</h4> </a> </li>
+							<li> <a href = "#"> <h4>ПЕРЕМЕНА</h4> </a> </li>
+							<li> <a href = "#"> <h4>СЕМЬЯ</h4> </a> </li>
+							<li> <a href = "#"> <h4>ПОДРОСТКИ</h4> </a> </li>
+							<li> <a href = "#"> <h4>ЕГЭ</h4> </a> </li>
+							<li> <a href = "#"> <h4>КАНИКУЛЫ</h4> </a> </li>
+							<li class="blogi"> <a href = "#"> <h4>БЛОГИ</h4> </a> </li> 
+						</ul>
+				</div>
 
-			<div id ="Front_Page_Grid">
-				<div class="Front_Card">
-					<div class="article_card">
-						<a class="article_card_link">
-							<div class="image_wrap">
-								<picture>
-									<img class="article_card_image" src="./Assets/img/image.jpg">
-								</picture>
-							</div>
-							<div class="article_card_content">
-								<div class="main_tag">Блоги</div>
-								<div class="card_title">Танец для детей: почему не только балет</div>
-								<div class="article_card_stats">
-									<div class="read_time">
-										<div class="read_time_icon">
-											<div class="svg_icon">
-												<i class="far fa-clock"></i>
+				<div id ="Front_Page_Grid">
+					<div class="Front_Card">
+						<div class="article_card">
+							<a class="article_card_link">
+								<div class="image_wrap">
+									<picture>
+										<img class="article_card_image" src="./Assets/img/image.jpg">
+									</picture>
+								</div>
+								<div class="article_card_content">
+									<div class="main_tag">Блоги</div>
+									<div class="card_title">Танец для детей: почему не только балет</div>
+									<div class="article_card_stats">
+										<div class="read_time">
+											<div class="read_time_icon">
+												<div class="svg_icon">
+													<i class="far fa-clock"></i>
+												</div>
 											</div>
+											<span class="article_card_counter">Читать: 2 мин</span>
 										</div>
-										<span class="article_card_counter">Читать: 2 мин</span>
 									</div>
 								</div>
-							</div>
-							<div class="image_card"></div>
-						</a>
+								<div class="image_card"></div>
+							</a>
+						</div>
 					</div>
+					<div class="Front_Card">
+						<div class="article_card">
+							<a class="article_card_link">
+								<div class="image_wrap">
+									<picture>
+										<img class="article_card_image" src="./Assets/img/image.jpg">
+									</picture>
+								</div>
+								<div class="article_card_content">
+									<div class="main_tag">Блоги</div>
+									<div class="card_title">Танец для детей: почему не только балет</div>
+									<div class="article_card_stats">
+										<div class="read_time">
+											<div class="read_time_icon">
+												<div class="svg_icon">
+													<i class="far fa-clock"></i>
+												</div>
+											</div>
+											<span class="article_card_counter">Читать: 2 мин</span>
+										</div>
+									</div>
+								</div>
+								<div class="image_card"></div>
+							</a>
+						</div>
+					</div>
+				<div class="Front_Card">
+						<div class="article_card">
+							<a class="article_card_link">
+								<div class="image_wrap">
+									<picture>
+										<img class="article_card_image" src="./Assets/img/image.jpg">
+									</picture>
+								</div>
+								<div class="article_card_content">
+									<div class="main_tag">Блоги</div>
+									<div class="card_title">Танец для детей: почему не только балет</div>
+									<div class="article_card_stats">
+										<div class="read_time">
+											<div class="read_time_icon">
+												<div class="svg_icon">
+													<i class="far fa-clock"></i>
+												</div>
+											</div>
+											<span class="article_card_counter">Читать: 2 мин</span>
+										</div>
+									</div>
+								</div>
+								<div class="image_card"></div>
+							</a>
+						</div>
+					</div>
+				<div class="Front_Card">
+						<div class="article_card">
+							<a class="article_card_link">
+								<div class="image_wrap">
+									<picture>
+										<img class="article_card_image" src="./Assets/img/image.jpg">
+									</picture>
+								</div>
+								<div class="article_card_content">
+									<div class="main_tag">Блоги</div>
+									<div class="card_title">Танец для детей: почему не только балет</div>
+									<div class="article_card_stats">
+										<div class="read_time">
+											<div class="read_time_icon">
+												<div class="svg_icon">
+													<i class="far fa-clock"></i>
+												</div>
+											</div>
+											<span class="article_card_counter">Читать: 2 мин</span>
+										</div>
+									</div>
+								</div>
+								<div class="image_card"></div>
+							</a>
+						</div>
+					</div>			
 				</div>
-				<div class="Front_Card">
-					<div class="article_card">
-						<a class="article_card_link">
-							<div class="image_wrap">
-								<picture>
-									<img class="article_card_image" src="./Assets/img/image.jpg">
-								</picture>
-							</div>
-							<div class="article_card_content">
-								<div class="main_tag">Блоги</div>
-								<div class="card_title">Танец для детей: почему не только балет</div>
-								<div class="article_card_stats">
-									<div class="read_time">
-										<div class="read_time_icon">
-											<div class="svg_icon">
-												<i class="far fa-clock"></i>
-											</div>
-										</div>
-										<span class="article_card_counter">Читать: 2 мин</span>
-									</div>
-								</div>
-							</div>
-							<div class="image_card"></div>
-						</a>
-					</div>
-				</div>
-				<div class="Front_Card">
-					<div class="article_card">
-						<a class="article_card_link">
-							<div class="image_wrap">
-								<picture>
-									<img class="article_card_image" src="./Assets/img/image.jpg">
-								</picture>
-							</div>
-							<div class="article_card_content">
-								<div class="main_tag">Блоги</div>
-								<div class="card_title">Танец для детей: почему не только балет</div>
-								<div class="article_card_stats">
-									<div class="read_time">
-										<div class="read_time_icon">
-											<div class="svg_icon">
-												<i class="far fa-clock"></i>
-											</div>
-										</div>
-										<span class="article_card_counter">Читать: 2 мин</span>
-									</div>
-								</div>
-							</div>
-							<div class="image_card"></div>
-						</a>
-					</div>
-				</div>
-				<div class="Front_Card">
-					<div class="article_card">
-						<a class="article_card_link">
-							<div class="image_wrap">
-								<picture>
-									<img class="article_card_image" src="./Assets/img/image.jpg">
-								</picture>
-							</div>
-							<div class="article_card_content">
-								<div class="main_tag">Блоги</div>
-								<div class="card_title">Танец для детей: почему не только балет</div>
-								<div class="article_card_stats">
-									<div class="read_time">
-										<div class="read_time_icon">
-											<div class="svg_icon">
-												<i class="far fa-clock"></i>
-											</div>
-										</div>
-										<span class="article_card_counter">Читать: 2 мин</span>
-									</div>
-								</div>
-							</div>
-							<div class="image_card"></div>
-						</a>
-					</div>
-				</div>			
 			</div>
 		</div>
-	</div>
+
 	<div class="More_publications">
 		<div class="control_button">
 			<button class="c_button_label" onclick = "add_card()" > Больше статей </button>
@@ -257,8 +273,6 @@
 
 
 			
-	</div>
-
 
 </body>
 
