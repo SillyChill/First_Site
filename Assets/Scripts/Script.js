@@ -84,3 +84,17 @@ function add_card() {
 	}
 	return i++;
 }
+var heightsBox = 0;
+
+function add_card_height() {
+	add_card();
+	$('.Front_Card').each(function(){
+		let cardTitleHeight = $(this).find('.card_title').height();
+		// console.log(cardTitleHeight);
+		if ( cardTitleHeight > heightsBox){
+			heightsBox = cardTitleHeight;
+		}
+	});
+	console.log(heightsBox);
+	$('.Front_Card').find('.card_title').height(heightsBox);
+}
