@@ -8,10 +8,10 @@ body {
 
 .mask{
 	background-color: #212121;
-    height: 100%;
+    height: 295%;
     width: 100%;
     opacity: 0.9;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     
 }
@@ -86,8 +86,7 @@ body {
     box-sizing: border-box;
     width: 25%;
     float: left;
-    max-height: 460px;
-    height: 100%;
+    max-height: 470px;
     min-height: fit-content;
 }
 
@@ -117,6 +116,7 @@ body {
 	padding-bottom: 55px;
 	text-align: center;
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 li.select a{
@@ -433,6 +433,16 @@ li.blogi h4 {
 
 }
 
+.f_lt {
+	float: left;
+	margin-left: 450px;
+}
+
+.f_rt{
+	float: right;
+	margin-right: 450px;
+}
+
 .c_button_label:focus {
 	outline: 0;
 	box-shadow: none;
@@ -576,6 +586,44 @@ button.c_button_label  {
 
 }
 
+.mod_wind_vis_true {
+	max-width: 400px;
+	margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    background-color: #212121;
+    padding: 10px;
+    color: #FFF;
+    position: relative;
+    border: 2px solid #47b3ac;
+}
+
+.mod_wind_vis_true i {
+	size: 20px 20px;
+	color: #FFF;
+	float: right;
+	margin-right: 10px;
+}
+
+.mod_wind_vis_false {
+	max-width: 400px;
+	margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    background-color: #212121;
+    padding: 10px;
+    color: #FFF;
+    position: relative;
+    border: 2px solid #ffa500;
+}
+
+.mod_wind_vis_false i {
+	size: 20px 20px;
+	color: #FFF;
+	float: right;
+	margin-right: 10px;
+}
+
 .control_label_footer {
 	box-sizing: border-box;
     width: 100%;
@@ -698,8 +746,8 @@ ul.rubrics_menu a:hover {
 }
 
 .article_card_content {
-	padding: 20px 25px 0px;
-	height:100%;
+	padding: 20px 25px 25px 25px;
+	/*height:100%;*/
 }
 
 .main_tag {
@@ -730,7 +778,7 @@ ul.rubrics_menu a:hover {
 
 .article_card_image {
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 }
 
 .card_title {
@@ -753,6 +801,7 @@ ul.rubrics_menu a:hover {
 .read_time {
 	font: 600 13px/1.2 Proxima,sans-serif;
     display: inline-block;
+    width: 100%;
 }
 
 .read_time_icon {
@@ -780,4 +829,10 @@ ul.rubrics_menu a:hover {
 
 .article_card_counter {
 	vertical-align: baseline;
+}
+
+.article_card_data {
+	vertical-align: baseline;
+	width: 100%;
+	font: 600 13px/1.2 Proxima,sans-serif;
 }
