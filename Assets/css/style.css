@@ -435,12 +435,23 @@ li.blogi h4 {
 
 .f_lt {
 	float: left;
-	margin-left: 450px;
+	margin-left: 400px;
 }
 
 .f_rt{
 	float: right;
-	margin-right: 450px;
+}
+
+#filt_but{
+	margin: 0 35px 0 15px;
+}
+
+#sort_but{
+	margin-right: 300px;
+}
+
+#input_dat_1{
+	margin-top: 10px;
 }
 
 .c_button_label:focus {

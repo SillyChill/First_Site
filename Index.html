@@ -106,8 +106,12 @@
 
     <div class="More_publications">
         <div class="control_button">
-            <button class="c_button_label f_lt" onclick = "add_card_height()" > Больше статей </button>
-            <button class="c_button_label f_rt" onclick="sort_card()"> Сортировка </button>
+            <button class="c_button_label f_lt" onclick = "add_card_with_height()" > Больше статей </button>
+            <button id="sort_but" class="c_button_label f_rt" onclick="sort_card()"> Сортировка </button>
+            <button id="filt_but" class="c_button_label f_rt" onclick="filt_card()" >Фильтровать</button>
+            <input id="input_dat_1" type="data_filt" class="f_rt"  value autocomplete="on" spellcheck="false">
+            <input id="input_dat_2" type="data_filt" class="f_rt" value autocomplete="on" spellcheck="false">
+
 
         </div>
     </div>
